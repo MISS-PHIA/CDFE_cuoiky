@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset một số thuộc tính mặc định */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background-color: #6f4c3e;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      section {
+        padding: 20px;
+        margin: 10px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .job {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      form label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+
+      form input[type="text"],
+      form input[type="email"],
+      form input[type="tel"],
+      form select,
+      form input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      form button {
+        padding: 10px;
+        background-color: #6f4c3e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      form button:hover {
+        background-color: #5a3b2e;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #6f4c3e;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      a {
+        color: #6f4c3e;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <ul class="navbar">
+        <li><a href="GK.html">Home</a></li>
+        <li><a href="#about">Giới Thiệu</a></li>
+        <li><a href="sanpham.html">Sản Phẩm</a></li>
+        <li><a href="#customers">Khách hàng</a></li>
+        <li><a href="faq.html">Liên hệ</a></li>
+        <li><a href="sigup.html">Đăng nhập </a></li>
+      </ul>
+      <!-- icons -->
+      <div class="header-icon">
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-search" id="search-icon"></i>
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here..." />
+      </div>
+    </header>
+    <section id="careers">
+      <h2 style="padding-bottom: 40px">
+        Cơ Hội Nghề Nghiệp Tại Cửa Hàng Cà Phê
+      </h2>
+      <h1>
+        Chúng tôi đang tìm kiếm những ứng viên nhiệt huyết và đam mê cà phê để
+        gia nhập đội ngũ của chúng tôi. Dưới đây là các vị trí tuyển dụng hiện
+        có:
+      </h1>
+
+      <div class="job">
+        <h3>Nhân Viên Pha Chế</h3>
+        <p>
+          <strong>Mô tả công việc:</strong> Pha chế các loại đồ uống cà phê,
+          phục vụ khách hàng và duy trì vệ sinh khu vực làm việc.
+        </p>
+        <p>
+          <strong>Yêu cầu:</strong> Có kinh nghiệm pha chế, yêu thích cà phê,
+          giao tiếp tốt.
+        </p>
+        <p>
+          <strong>Quyền lợi:</strong> Lương hấp dẫn, môi trường làm việc thân
+          thiện, cơ hội thăng tiến.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>Nhân Viên Bán Hàng</h3>
+        <p>
+          <strong>Mô tả công việc:</strong> Tiếp đón khách hàng, giới thiệu sản
+          phẩm và xử lý thanh toán.
+        </p>
+        <p>
+          <strong>Yêu cầu:</strong> Kỹ năng giao tiếp tốt, chăm sóc khách hàng,
+          có trách nhiệm.
+        </p>
+        <p>
+          <strong>Quyền lợi:</strong> Lương cơ bản + thưởng doanh số, đào tạo
+          chuyên môn.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>Quản Lý Cửa Hàng</h3>
+        <p>
+          <strong>Mô tả công việc:</strong> Quản lý hoạt động hàng ngày của cửa
+          hàng, điều phối nhân viên và đảm bảo chất lượng dịch vụ.
+        </p>
+        <p>
+          <strong>Yêu cầu:</strong> Có kinh nghiệm quản lý, khả năng lãnh đạo,
+          tổ chức tốt.
+        </p>
+        <p>
+          <strong>Quyền lợi:</strong> Lương cao, thưởng theo hiệu quả công việc,
+          cơ hội phát triển nghề nghiệp.
+        </p>
+      </div>
+
+      <h3>Cách Ứng Tuyển</h3>
+      <p>Vui lòng điền thông tin vào form dưới đây để ứng tuyển:</p>
+
+      <form
+        id="application-form"
+        action="submit_application.php"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label for="name">Họ và Tên:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Số Điện Thoại:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="position">Vị Trí Ứng Tuyển:</label>
+        <select id="position" name="position" required>
+          <option value="barista">Nhân Viên Pha Chế</option>
+          <option value="sales">Nhân Viên Bán Hàng</option>
+          <option value="manager">Quản Lý Cửa Hàng</option>
+        </select>
+
+        <label for="cv">Tải lên CV:</label>
+        <input
+          type="file"
+          id="cv"
+          name="cv"
+          accept=".pdf,.doc,.docx"
+          required
+        />
+
+        <button type="submit">Gửi Đơn Ứng Tuyển</button>
+      </form>
+    </section>
+    <section class="footer">
+      <div class="footer-box">
+        <h3>Coffee Shop</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+          sapiente hic similique aliquam eum.
+        </p>
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Terns Of Use</a></li>
+        <li><a href="#">Products</a></li>
+      </div>
+      <div class="footer-box">
+        <h3>View Guides</h3>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blogs Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+        <li><a href="#">Products</a></li>
+      </div>
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+          <span><i class="bx bxs-map"></i>Hà Nội, HCM</span>
+          <span><i class="bx bxs-phone"></i>+1 444444444</span>
+          <span><i class="bx bxs-envelope"></i>coffeeshop.com</span>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>&#169; ABC All right reserved</p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

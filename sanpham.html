@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản Phẩm Hạt Cà Phê - Cửa Hàng Cà Phê</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Reset một số thuộc tính mặc định */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      section {
+        padding: 20px;
+        margin: 10px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .product {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: black;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #6f4c3e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #5a3b2e;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Giới Thiệu</a></li>
+        <li><a href="sanpham.html">Sản Phẩm</a></li>
+        <li><a href="#customers">Khách hàng</a></li>
+        <li><a href="faq.html">Liên hệ</a></li>
+        <li><a href="sigup.html">Đăng nhập</a></li>
+      </ul>
+      <!-- icons -->
+      <div class="header-icon">
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-search" id="search-icon"></i>
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here..." />
+      </div>
+    </header>
+
+    <section id="coffee-beans">
+      <h2>Sản Phẩm Hạt Cà Phê</h2>
+      <div class="product">
+        <h1>Hạt Cà Phê Arabica</h1>
+        <img
+          style="border-radius: 50%; width: 20%"
+          src="img/cafe-arabica-cau-dat-011.jpg"
+          alt="Hạt Cà Phê Arabica"
+        />
+        <p>
+          Mô tả: Hạt cà phê Arabica chất lượng cao, hương vị thơm ngon, nhẹ
+          nhàng.
+        </p>
+        <p>Giá: 150.000 VNĐ/500g</p>
+        <button onclick="addToCart('Hạt Cà Phê Arabica', 150000)">
+          Thêm vào giỏ hàng
+        </button>
+      </div>
+      <div class="product">
+        <h3>Hạt Cà Phê Robusta</h3>
+        <img
+          style="border-radius: 50%; width: 20%"
+          src="img/robusta.jpg"
+          alt="Hạt Cà Phê Robusta"
+        />
+        <p>
+          Mô tả: Hạt cà phê Robusta đậm đà, hương vị mạnh mẽ, thích hợp cho
+          những ai yêu thích cà phê đen.
+        </p>
+        <p>Giá: 120.000 VNĐ/500g</p>
+        <button onclick="addToCart('Hạt Cà Phê Robusta', 120000)">
+          Thêm vào giỏ hàng
+        </button>
+      </div>
+      <div class="product">
+        <h3>Hạt Cà Phê Blend</h3>
+        <img
+          style="border-radius: 50%; width: 20%"
+          src="img/blend.jpg"
+          alt="Hạt Cà Phê Blend"
+        />
+        <p>
+          Mô tả: Hỗn hợp hạt cà phê Arabica và Robusta, mang đến hương vị cân
+          bằng và phong phú.
+        </p>
+        <p>Giá: 140.000 VNĐ/500g</p>
+        <button onclick="addToCart('Hạt Cà Phê Blend', 140000)">
+          Thêm vào giỏ hàng
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Cửa Hàng Cà Phê. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
