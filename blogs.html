@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sản Phẩm Hạt Cà Phê - Cửa Hàng Cà Phê</title>
+    <title>Blog - Cửa Hàng Cà Phê</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -25,7 +25,7 @@
       }
 
       header {
-        background-color: black;
+        background-color: #6f4c3e;
         color: white;
         padding: 10px 0;
         text-align: center;
@@ -54,41 +54,34 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
-      .product {
+      article {
+        margin-bottom: 20px;
+        padding: 15px;
         border: 1px solid #ccc;
-        padding: 10px;
-        margin: 10px 0;
         border-radius: 5px;
-        text-align: center;
       }
 
-      .product img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
+      article h3 {
+        margin-bottom: 10px;
       }
 
       footer {
         text-align: center;
         padding: 10px 0;
-        background-color: black;
+        background-color: #6f4c3e;
         color: white;
         position: relative;
         bottom: 0;
         width: 100%;
       }
 
-      button {
-        padding: 10px;
-        background-color: #6f4c3e;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+      a {
+        color: #6f4c3e;
+        text-decoration: none;
       }
 
-      button:hover {
-        background-color: #5a3b2e;
+      a:hover {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -98,12 +91,12 @@
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <ul class="navbar">
-        <li><a href="#home">Home</a></li>
+        <li><a href="GK.html">Home</a></li>
         <li><a href="#about">Giới Thiệu</a></li>
         <li><a href="sanpham.html">Sản Phẩm</a></li>
         <li><a href="customer.html">Khách hàng</a></li>
         <li><a href="faq.html">Liên hệ</a></li>
-        <li><a href="sigup.html">Đăng nhập</a></li>
+        <li><a href="sigup.html">Đăng nhập </a></li>
         <li><a href="career.html">Tuyển dụng </a></li>
         <li><a href="chinhsach.html">Chính sách </a></li>
       </ul>
@@ -119,58 +112,46 @@
       </div>
     </header>
 
-    <section id="coffee-beans">
-      <h2>Sản Phẩm Hạt Cà Phê</h2>
-      <div class="product">
-        <h1>Hạt Cà Phê Arabica</h1>
-        <img
-          style="border-radius: 50%; width: 20%"
-          src="img/cafe-arabica-cau-dat-011.jpg"
-          alt="Hạt Cà Phê Arabica"
-        />
+    <section id="blog">
+      <h2>Blog Cà Phê</h2>
+      <article>
+        <h3>Cách Pha Cà Phê Espresso Tại Nhà</h3>
+        <p><strong>Ngày đăng:</strong> 15/10/2023</p>
         <p>
-          Mô tả: Hạt cà phê Arabica chất lượng cao, hương vị thơm ngon, nhẹ
-          nhàng.
+          Cà phê espresso là một trong những loại cà phê phổ biến nhất. Để pha
+          cà phê espresso tại nhà, bạn cần một máy pha cà phê espresso và hạt cà
+          phê chất lượng. Dưới đây là hướng dẫn từng bước để bạn có thể thưởng
+          thức một tách espresso thơm ngon.
         </p>
-        <p>Giá: 150.000 VNĐ/500g</p>
-        <button onclick="addToCart('Hạt Cà Phê Arabica', 150000)">
-          Thêm vào giỏ hàng
-        </button>
-      </div>
-      <div class="product">
-        <h3>Hạt Cà Phê Robusta</h3>
-        <img
-          style="border-radius: 50%; width: 20%"
-          src="img/robusta.jpg"
-          alt="Hạt Cà Phê Robusta"
-        />
-        <p>
-          Mô tả: Hạt cà phê Robusta đậm đà, hương vị mạnh mẽ, thích hợp cho
-          những ai yêu thích cà phê đen.
-        </p>
-        <p>Giá: 120.000 VNĐ/500g</p>
-        <button onclick="addToCart('Hạt Cà Phê Robusta', 120000)">
-          Thêm vào giỏ hàng
-        </button>
-      </div>
-      <div class="product">
-        <h3>Hạt Cà Phê Blend</h3>
-        <img
-          style="border-radius: 50%; width: 20%"
-          src="img/blend.jpg"
-          alt="Hạt Cà Phê Blend"
-        />
-        <p>
-          Mô tả: Hỗn hợp hạt cà phê Arabica và Robusta, mang đến hương vị cân
-          bằng và phong phú.
-        </p>
-        <p>Giá: 140.000 VNĐ/500g</p>
-        <button onclick="addToCart('Hạt Cà Phê Blend', 140000)">
-          Thêm vào giỏ hàng
-        </button>
-      </div>
-    </section>
+        <a href="cf.html">Đọc thêm...</a>
+      </article>
 
+      <article>
+        <h3>Những Lợi Ích Của Cà Phê Đối Với Sức Khỏe</h3>
+        <p><strong>Ngày đăng:</strong> 10/10/2023</p>
+        <p>
+          Cà phê không chỉ là một thức uống ngon mà còn mang lại nhiều lợi ích
+          cho sức khỏe. Nghiên cứu cho thấy cà phê có thể giúp cải thiện tâm
+          trạng, tăng cường trí nhớ và thậm chí giảm nguy cơ mắc một số bệnh.
+          Hãy cùng tìm hiểu thêm về những lợi ích này!
+        </p>
+        <a
+          href="https://kapha.vn/20-loi-ich-cua-ca-phe-doi-voi-suc-khoe-con-nguoi/#:~:text=20%20l%E1%BB%A3i%20%C3%ADch%20c%E1%BB%A7a%20c%C3%A0%20ph%C3%AA%20%C4%91%E1%BB%91i%20v%E1%BB%9Bi,c%C6%B0%E1%BB%9Dng%20kh%E1%BA%A3%20n%C4%83ng%20t%C3%ACnh%20d%E1%BB%A5c%20...%20More%20items"
+          >Đọc thêm...</a
+        >
+      </article>
+
+      <article>
+        <h3>Top 5 Loại Cà Phê Nổi Tiếng Trên Thế Giới</h3>
+        <p><strong>Ngày đăng:</strong> 05/10/2023</p>
+        <p>
+          Cà phê có rất nhiều loại khác nhau, mỗi loại đều có hương vị và đặc
+          điểm riêng. Trong bài viết này, chúng tôi sẽ giới thiệu cho bạn 5 loại
+          cà phê nổi tiếng nhất trên thế giới mà bạn không nên bỏ lỡ.
+        </p>
+        <a href="top-coffees.html">Đọc thêm...</a>
+      </article>
+    </section>
     <section class="footer">
       <div class="footer-box">
         <h3>Coffee Shop</h3>
@@ -213,7 +194,6 @@
     <div class="copyright">
       <p>&#169; ABC All right reserved</p>
     </div>
-
-    <script src="main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
